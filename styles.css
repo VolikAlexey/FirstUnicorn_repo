@@ -1,0 +1,15 @@
+.heading {
+    font-family: 'Courier New', Courier, monospace;
+    
+    color: cornflowerblue;
+}
+
+.heading p {
+    font-size: large;
+
+    color: black;
+}
+
+.heading p b {
+    text-decoration: underline;
+}
