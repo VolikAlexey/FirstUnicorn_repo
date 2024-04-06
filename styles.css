@@ -1,15 +1,204 @@
-body {
-    font-family: 'Courier New', Courier, monospace;
-    
-    color: cornflowerblue;
+/* Стили для контейнера header */
+header {
+    background-color: #FFA500; /* Оранжевый цвет */
+    color: #000000; /* Черный цвет текста */
+    padding: 20px 0; /* Внутренние отступы сверху и снизу */
 }
 
-.heading p {
-    font-size: large;
-
-    color: black;
+/* Стили для контейнера внутри header */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Внутренние отступы слева и справа */
 }
 
-.heading p b {
-    text-decoration: underline;
+/* Стили для заголовка */
+header h1 {
+    margin: 0; /* Убираем внешние отступы */
+    color:#000000; /* Черный цвет текста */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+}
+
+/* Стили для навигационного меню */
+header nav ul {
+    list-style: none; /* Убираем маркеры у списка */
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline; /* Размещаем элементы в строку */
+    margin-right: 20px; /* Отступы между элементами */
+}
+
+header nav ul li:last-child {
+    margin-right: 0; /* Убираем отступ справа у последнего элемента */
+}
+
+/* Стили для ссылок в навигационном меню */
+header nav ul li a {
+    color: #000000; /* Черный цвет текста */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    font-weight: bold; /* Жирный текст */
+}
+
+/* Стили для контейнера footer */
+footer {
+    background-color: #FFA500; /* Оранжевый цвет */
+    color: #000000; /* Черный цвет текста */
+    padding: 20px 0; /* Внутренние отступы сверху и снизу */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+/* Стили для контейнера внутри footer */
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Внутренние отступы слева и справа */
+}
+
+/* Стили для навигационного меню в footer */
+footer nav ul {
+    list-style: none; /* Убираем маркеры у списка */
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline; /* Размещаем элементы в строку */
+    margin-right: 20px; /* Отступы между элементами */
+}
+
+footer nav ul li:last-child {
+    margin-right: 0; /* Убираем отступ справа у последнего элемента */
+}
+
+/* Стили для ссылок в навигационном меню в footer */
+footer nav ul li a {
+    color: #000000; /* Черный цвет текста */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    font-weight: bold; /* Жирный текст */
+}
+
+/* Стили для контейнера main */
+main {
+    background-color: #FFFFFF; /* Белый цвет фона */
+    color: #000000; /* Черный цвет текста */
+    padding: 50px 0; /* Внутренние отступы сверху и снизу */
+}
+
+/* Стили для контейнера внутри main */
+main .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Внутренние отступы слева и справа */
+}
+
+/* Стили для заголовка */
+main h2 {
+    color: #FFA500; /* Оранжевый цвет текста */
+}
+
+/* Стили для списка услуг */
+main ul {
+    padding-left: 20px; /* Отступ слева */
+}
+
+/* Стили для ссылок в списке услуг */
+main ul li {
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+/* Стили для копирайта */
+footer p {
+    color: #FFFFFF; /* Белый цвет текста */
+}
+
+/* Стили для блока регистрации */
+.registration {
+    background-color: #FFFFFF; /* Белый цвет фона */
+    color: #000000; /* Черный цвет текста */
+    padding: 50px 0; /* Внутренние отступы сверху и снизу */
+}
+
+/* Стили для формы регистрации */
+.registration-form {
+    max-width: 400px; /* Максимальная ширина формы */
+    margin: 0 auto; /* Центрирование формы */
+}
+
+/* Стили для элементов формы */
+.registration-form label {
+    font-weight: bold; /* Жирный текст для меток */
+    margin-bottom: 5px; /* Отступ снизу для меток */
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"] {
+    width: 100%; /* Ширина полей ввода */
+    padding: 8px; /* Внутренние отступы */
+    margin-bottom: 15px; /* Отступ снизу для полей ввода */
+    border: 1px solid #CCCCCC; /* Серый цвет границы */
+    border-radius: 5px; /* Скругление углов */
+}
+
+.registration-form input[type="submit"] {
+    width: 100%; /* Ширина кнопки */
+    padding: 10px; /* Внутренние отступы */
+    background-color: #FFA500; /* Оранжевый цвет фона */
+    color: #FFFFFF; /* Белый цвет текста */
+    border: none; /* Убираем границы */
+    border-radius: 5px; /* Скругление углов */
+    cursor: pointer; /* Изменение курсора при наведении */
+}
+
+.registration-form input[type="submit"]:hover {
+    background-color: #FF8C00; /* Оранжевый цвет фона при наведении */
+}
+
+/* Стили для блока входа */
+.login {
+    background-color: #FFFFFF; /* Белый цвет фона */
+    color: #000000; /* Черный цвет текста */
+    padding: 50px 0; /* Внутренние отступы сверху и снизу */
+}
+
+/* Стили для формы входа */
+.login-form {
+    max-width: 400px; /* Максимальная ширина формы */
+    margin: 0 auto; /* Центрирование формы */
+}
+
+/* Стили для элементов формы */
+.login-form label {
+    font-weight: bold; /* Жирный текст для меток */
+    margin-bottom: 5px; /* Отступ снизу для меток */
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%; /* Ширина полей ввода */
+    padding: 8px; /* Внутренние отступы */
+    margin-bottom: 15px; /* Отступ снизу для полей ввода */
+    border: 1px solid #CCCCCC; /* Серый цвет границы */
+    border-radius: 5px; /* Скругление углов */
+}
+
+.login-form input[type="submit"] {
+    width: 100%; /* Ширина кнопки */
+    padding: 10px; /* Внутренние отступы */
+    background-color: #FFA500; /* Оранжевый цвет фона */
+    color: #FFFFFF; /* Белый цвет текста */
+    border: none; /* Убираем границы */
+    border-radius: 5px; /* Скругление углов */
+    cursor: pointer; /* Изменение курсора при наведении */
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #FF8C00; /* Оранжевый цвет фона при наведении */
 }
